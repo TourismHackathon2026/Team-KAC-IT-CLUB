@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-gray-50 antialiased font-sans;
+  }
+}
+
+@layer components {
+  .btn-nepal {
+    @apply px-6 py-3 bg-gradient-to-r from-nepal-red to-nepal-crimson text-white 
+           rounded-xl hover:shadow-xl transition-all duration-300 
+           transform hover:scale-[1.02] hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-nepal-red focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
+           font-semibold shadow-lg shadow-nepal-red/30;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-gradient-to-r from-secondary-500 to-secondary-700 text-white 
+           rounded-xl hover:shadow-xl transition-all duration-300 
+           transform hover:scale-[1.02] hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
+           font-semibold shadow-lg shadow-secondary-500/30;
+  }
+  
+  .btn-outline-nepal {
+    @apply px-6 py-3 border-2 border-nepal-red text-nepal-red 
+           rounded-xl hover:bg-nepal-red hover:text-white 
+           transition-all duration-300 font-semibold
+           focus:outline-none focus:ring-2 focus:ring-nepal-red focus:ring-offset-2;
+  }
+  
+  .card-nepal {
+    @apply bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl 
+           hover:shadow-2xl transition-all duration-300 
+           border border-white/20 hover:border-nepal-red/20;
+  }
+  
+  .input-nepal {
+    @apply w-full px-4 py-3 border-2 border-gray-200 rounded-xl 
+           focus:outline-none focus:ring-2 focus:ring-nepal-red focus:border-transparent
+           transition-all duration-200 bg-gray-50 hover:bg-white
+           text-gray-800 placeholder-gray-400;
+  }
+  
+  .nepal-flag-stripe {
+    @apply h-1 w-full bg-gradient-to-r from-nepal-red via-nepal-blue to-nepal-red;
+  }
+  
+  .nepal-pattern-bg {
+    @apply relative overflow-hidden;
+  }
+  
+  .nepal-pattern-bg::before {
+    content: '';
+    @apply absolute inset-0 opacity-5 pointer-events-none;
+    background-image: 
+      radial-gradient(circle at 20% 50%, #DC143C 1px, transparent 1px),
+      radial-gradient(circle at 80% 50%, #0033A0 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-nepal-red to-nepal-crimson rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply opacity-80;
+}
+
+/* Loading Spinner */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #DC143C;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Nepal Flag Animation */
+.flag-wave {
+  animation: wave 3s ease-in-out infinite;
+}

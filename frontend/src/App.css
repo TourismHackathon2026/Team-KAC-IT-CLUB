@@ -1,0 +1,30 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Custom styles */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+/* Add any other custom styles here */
