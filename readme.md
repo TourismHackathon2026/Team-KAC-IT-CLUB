@@ -1,4 +1,3 @@
-```md
 <div align="center">
 
 # 🛡️ SafeHer Nepal
@@ -7,20 +6,23 @@
 
 _Making solo travel safer, smarter, and more confident._
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-Under%20Development-orange)]()
-[![Platform](https://img.shields.io/badge/platform-Web%20%7C%20Mobile-green)]()
-[![Built With](https://img.shields.io/badge/Built%20With-MERN%20Stack-blue)]()
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-Under%20Development-orange)
+![Platform](https://img.shields.io/badge/platform-Web%20%7C%20Mobile-green)
+![Built With](https://img.shields.io/badge/Built%20With-MERN%20Stack-blue)
+![Hackathon](https://img.shields.io/badge/National%20AI%20Hackathon-2026-red)
+
+**National AI Hackathon 2026 Project**
 
 ---
 
-**National AI Hackathon 2026 Project**
+_Empowering safer journeys across Nepal through Artificial Intelligence._
 
 </div>
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
 **SafeHer Nepal** is an AI-powered travel safety platform designed to empower solo travelers—especially women—by providing real-time safety intelligence, emergency assistance, scam prevention, and trusted local recommendations.
 
@@ -30,35 +32,35 @@ SafeHer Nepal combines **Artificial Intelligence**, **Geolocation**, **Crowdsour
 
 ---
 
-## ❗ Problem Statement
+# ❗ Problem Statement
 
 Solo travelers in Nepal frequently encounter challenges such as:
 
-- Personal safety concerns
-- Harassment and stalking
-- Tourist scams and fraud
-- Unsafe walking routes at night
-- Language barriers
-- Difficulty locating emergency services
-- Lack of verified local information
-- Limited access to trusted accommodations and transport
+- 🚶 Personal safety concerns
+- 🚨 Harassment and stalking
+- 💸 Tourist scams and fraud
+- 🌙 Unsafe walking routes at night
+- 🗣️ Language barriers
+- 🏥 Difficulty locating emergency services
+- 📍 Lack of verified local information
+- 🚕 Finding trusted accommodations and transportation
 
-Current travel applications focus on navigation and booking but rarely prioritize **traveler safety**.
+Current travel applications mainly focus on **navigation**, **hotel booking**, and **tourism discovery**, while traveler safety remains largely overlooked.
 
 ---
 
 # 🎯 Our Solution
 
-SafeHer Nepal provides a comprehensive safety ecosystem that enables travelers to:
+SafeHer Nepal provides a complete AI-powered travel safety ecosystem that enables travelers to:
 
-- View AI-generated safety scores
-- Navigate using the safest available routes
-- Instantly trigger emergency SOS alerts
-- Receive real-time hazard notifications
-- Report unsafe incidents anonymously
-- Detect common tourist scams
-- Find verified accommodations, taxis, and guides
-- Access offline emergency resources
+- 🧠 View AI-generated safety scores
+- 🗺️ Navigate using the safest available routes
+- 🚨 Trigger emergency SOS alerts instantly
+- ⚠️ Receive real-time hazard notifications
+- 📝 Report unsafe incidents anonymously
+- 🤖 Detect common tourist scams
+- 🏨 Find verified accommodations, taxis, and guides
+- 🌐 Access essential safety resources even offline
 
 ---
 
@@ -66,7 +68,7 @@ SafeHer Nepal provides a comprehensive safety ecosystem that enables travelers t
 
 ## 🧠 AI Safety Score
 
-Generate neighborhood safety scores using multiple factors including:
+Generate neighborhood safety scores using multiple factors:
 
 - Historical incidents
 - Community reports
@@ -79,7 +81,7 @@ Generate neighborhood safety scores using multiple factors including:
 
 ## 🚨 One-Tap SOS
 
-In emergency situations users can instantly:
+During emergencies users can instantly:
 
 - Share live GPS location
 - Notify emergency contacts
@@ -91,13 +93,13 @@ In emergency situations users can instantly:
 
 ## 🗺️ Safe Route Navigation
 
-Unlike traditional navigation systems, SafeHer Nepal recommends:
+Unlike traditional navigation systems, SafeHer Nepal recommends routes based on:
 
-- Well-lit roads
-- Crowded streets
-- CCTV-covered areas
-- Police patrol routes
-- Areas with higher safety ratings
+- Well-lit streets
+- Crowded roads
+- CCTV coverage
+- Police patrol areas
+- Community safety ratings
 
 ---
 
@@ -107,25 +109,25 @@ Users can anonymously report:
 
 - Harassment
 - Theft
-- Unsafe areas
+- Unsafe locations
 - Road blockages
 - Natural hazards
 - Tourist scams
 
-Reports help improve safety for future travelers.
+Community reports continuously improve the safety database for future travelers.
 
 ---
 
 ## 🤖 AI Scam Detection
 
-The system identifies potential scams by analyzing:
+The AI detects potential scams by analyzing:
 
-- User reports
+- Community reports
 - Scam patterns
 - Tourist hotspot incidents
 - Repeated complaints
 
-Travelers receive proactive scam warnings.
+Travelers receive proactive scam alerts before entering high-risk areas.
 
 ---
 
@@ -141,13 +143,13 @@ Discover trusted:
 - Taxi services
 - Local guides
 
-All based on safety ratings and community reviews.
+Recommendations are based on verified safety ratings and community feedback.
 
 ---
 
 ## 🌐 Offline Support
 
-Essential safety features remain accessible without internet access:
+Essential safety features remain accessible without internet:
 
 - Offline maps
 - Emergency contacts
@@ -158,46 +160,43 @@ Essential safety features remain accessible without internet access:
 ---
 
 # 🏗️ System Architecture
-```
 
-```
-                 +-------------------+
-                 |    Mobile App     |
-                 +---------+---------+
-                           |
-                           |
-                 REST API / WebSocket
-                           |
-    +----------------------+----------------------+
-    |                                             |
-```
-
-+---------------+ +-------------------+
-| Authentication| | AI Safety Engine |
-+---------------+ +-------------------+
-| |
-+----------------------+----------------------+
-|
-MongoDB Database
-|
-+------------+------------+------------+
-| | | |
-Users Reports Alerts Locations
-
+```text
+                    +----------------------+
+                    |    React Frontend    |
+                    +----------+-----------+
+                               |
+                  REST API / Socket.IO
+                               |
+        +----------------------+----------------------+
+        |                                             |
++---------------------+                   +----------------------+
+| Authentication API  |                   | AI Safety Engine     |
++---------------------+                   +----------------------+
+        |                                             |
+        +----------------------+----------------------+
+                               |
+                       Express.js Backend
+                               |
+                     MongoDB + Mongoose
+                               |
+     +------------+------------+------------+------------+
+     |            |            |            |            |
+   Users      Reports      Alerts      Locations     Reviews
 ```
 
 ---
 
 # 🛠️ Tech Stack
 
-## Frontend
+## 🎨 Frontend
 
 - React.js
 - Tailwind CSS
 - Leaflet / Google Maps
 - Socket.IO
 
-## Backend
+## ⚙️ Backend
 
 - Node.js
 - Express.js
@@ -206,57 +205,101 @@ Users Reports Alerts Locations
 - JWT Authentication
 - Socket.IO
 
-## AI
+## 🤖 Artificial Intelligence
 
 - Safety Score Prediction
 - Scam Classification
 - Route Risk Analysis
-- Natural Language Processing
+- Natural Language Processing (NLP)
 
-## APIs
+## 🔗 APIs
 
 - Google Maps API
 - OpenStreetMap
 - Weather API
-- Reverse Geocoding
+- Reverse Geocoding API
 - Emergency Services API
 
 ---
 
 # 📂 Project Structure
 
-```
-
+```text
 SafeHer-Nepal/
-
+│
 ├── client/
-│ ├── public/
-│ ├── src/
-│ ├── components/
-│ ├── pages/
-│ ├── hooks/
-│ ├── services/
-│ └── assets/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── assets/
+│   │   └── utils/
 │
 ├── server/
-│ ├── config/
-│ ├── controllers/
-│ ├── middleware/
-│ ├── models/
-│ ├── routes/
-│ ├── sockets/
-│ ├── services/
-│ └── utils/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── sockets/
+│   ├── services/
+│   └── utils/
 │
 ├── docs/
 ├── README.md
-└── package.json
-
+├── package.json
+└── .env.example
 ```
 
 ---
 
-# 🚀 Future Roadmap
+# 🚀 Getting Started
+
+## Prerequisites
+
+- Node.js 18+
+- MongoDB
+- npm or yarn
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/SafeHer-Nepal.git
+
+# Navigate to the project
+cd SafeHer-Nepal
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+# 🔑 Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+
+GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+
+OPENAI_API_KEY=your_openai_api_key
+```
+
+---
+
+# 🗺️ Future Roadmap
 
 - [ ] AI-powered route optimization
 - [ ] Voice-activated SOS
@@ -281,13 +324,11 @@ We welcome contributions from developers, designers, researchers, and travel ent
 4. Push to your branch
 5. Open a Pull Request
 
-Please read our contributing guidelines before submitting changes.
-
 ---
 
 # 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -305,9 +346,10 @@ Special thanks to:
 
 <div align="center">
 
-### "Every journey deserves to be safe."
+## 🌏 Every Journey Deserves to Be Safe
 
-**Built with ❤️ for safer travel in Nepal.**
+**Built with ❤️ in Nepal for the National AI Hackathon 2026**
+
+_Helping solo travelers explore Nepal with confidence._
 
 </div>
-```
