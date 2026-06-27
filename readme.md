@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ SafeHer Nepal
+# 🛡️ Touranet
 
 ### AI-Powered Safety Companion for Solo Travelers in Nepal
 
