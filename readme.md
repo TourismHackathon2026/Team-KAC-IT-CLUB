@@ -2,7 +2,7 @@
 
 # 🛡️ Touranet
 
-### AI-Powered Safety Companion for Solo Travelers in Nepal
+### Safety Companion for Solo Travelers in Nepal
 
 _Making solo travel safer, smarter, and more confident._
 
@@ -24,11 +24,11 @@ _Empowering safer journeys across Nepal through Artificial Intelligence._
 
 # 📖 Overview
 
-**SafeHer Nepal** is an AI-powered travel safety platform designed to empower solo travelers—especially women—by providing real-time safety intelligence, emergency assistance, scam prevention, and trusted local recommendations.
+**Touranet** is an AI-powered travel safety platform designed to empower solo travelers—especially women—by providing real-time safety intelligence, emergency assistance, scam prevention, and trusted local recommendations.
 
 Traveling alone should be about creating unforgettable experiences—not worrying about personal safety.
 
-SafeHer Nepal combines **Artificial Intelligence**, **Geolocation**, **Crowdsourced Community Reports**, and **Emergency Response Systems** into one unified platform that helps travelers make informed decisions before and during their journey.
+Touranet Nepal combines **Artificial Intelligence**, **Geolocation**, **Crowdsourced Community Reports**, and **Emergency SOS Systems** into one unified platform that helps travelers make informed decisions before and during their journey.
 
 ---
 
@@ -51,9 +51,8 @@ Current travel applications mainly focus on **navigation**, **hotel booking**, a
 
 # 🎯 Our Solution
 
-SafeHer Nepal provides a complete AI-powered travel safety ecosystem that enables travelers to:
+Touranet provides a complete travel safety ecosystem that enables travelers to:
 
-- 🧠 View AI-generated safety scores
 - 🗺️ Navigate using the safest available routes
 - 🚨 Trigger emergency SOS alerts instantly
 - ⚠️ Receive real-time hazard notifications
@@ -66,7 +65,7 @@ SafeHer Nepal provides a complete AI-powered travel safety ecosystem that enable
 
 # ✨ Core Features
 
-## 🧠 AI Safety Score
+## 🧠 SOS ALERTS
 
 Generate neighborhood safety scores using multiple factors:
 
@@ -93,7 +92,7 @@ During emergencies users can instantly:
 
 ## 🗺️ Safe Route Navigation
 
-Unlike traditional navigation systems, SafeHer Nepal recommends routes based on:
+Unlike traditional navigation systems, Touranet recommends routes based on:
 
 - Well-lit streets
 - Crowded roads
@@ -205,18 +204,10 @@ Essential safety features remain accessible without internet:
 - JWT Authentication
 - Socket.IO
 
-## 🤖 Artificial Intelligence
-
-- Safety Score Prediction
-- Scam Classification
-- Route Risk Analysis
-- Natural Language Processing (NLP)
-
 ## 🔗 APIs
 
 - Google Maps API
 - OpenStreetMap
-- Weather API
 - Reverse Geocoding API
 - Emergency Services API
 
@@ -225,7 +216,7 @@ Essential safety features remain accessible without internet:
 # 📂 Project Structure
 
 ```text
-SafeHer-Nepal/
+Touranet-Nepal/
 │
 ├── client/
 │   ├── public/
@@ -261,16 +252,16 @@ SafeHer-Nepal/
 
 - Node.js 18+
 - MongoDB
-- npm or yarn
+- npm
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SafeHer-Nepal.git
+git clone https://github.com/TourismHackathon2026/Team-KAC-IT-CLUB.git
 
 # Navigate to the project
-cd SafeHer-Nepal
+cd Team-KAC-IT-CLUB
 
 # Install dependencies
 npm install
